@@ -207,7 +207,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .header-portfolio {
     padding-bottom: 60px;
   }
@@ -1206,7 +1206,19 @@ body {
   padding: 40px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: scale(1) rotate(0) translate(-50%, -50%);
+    transition: transform 250ms;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
     position: absolute;
     top: 50%;

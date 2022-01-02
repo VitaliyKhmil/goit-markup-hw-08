@@ -1,10 +1,27 @@
 .portfolio-btn {
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+      // padding-top: 94px;
+      }
 }
 .btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // justify-content: center;
+  // margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .btn-list__text {
   font-weight: 500;
@@ -30,4 +47,25 @@
   border-radius: 4px;
 }
 }
-
+.btn-list__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

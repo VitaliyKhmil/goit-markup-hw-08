@@ -27,32 +27,85 @@
            <li class="header-list__item"><a href="" class="header-list__link link">Контакты</a></li>
          </ul>
          </nav>
-         <div class="header-connect">
-         <ul class="header-tel list">
-           <li class="header-tel__item"><a href="mailto:info@example.com" class="header-tel__link link"
-             >
-             <svg class="header-tel__icon-envelope"width="16" height="12">
-               <use href="./images/svg/icons.svg#icon-envelope"></use>
-             </svg>
-             info@devstudio.com</a></li>
+           <ul class="header-tel list">
+           <li class="header-tel__item">
+             <a href="mailto:info@example.com" class="header-tel__link link">
+            <div class="contacts__icon">
+              <svg class="contacts__icon-envelope" width="16" height="12">
+                <use href="./images/svg/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </div>
+            </a>
+            </li>
 
-           <li class="header-tel__item"><a href="tel:+380991111111" class="header-tel__link link">
-             <svg class="header-tel__icon-smartphone"width="10" height="16">
-               <use href="./images/svg/icons.svg#icon-smartphone"></use>
-             </svg>
-             +38 096 111 11 11</a></li>
+           <li class="header-tel__item">
+             <a href="tel:+380991111111" class="header-tel__link link">
+              <div class="contacts__icon">
+                <svg class="contacts__icon-smartphone" width="10" height="16">
+                  <use href="./images/svg/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </div>
+            </a>
+            </li>
          </ul>
+         
+        <button class="open-menu-btn">
+          <svg class="open-menu-burger" width="24" height="16">
+            <use href="./images/svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
          </div>
-         </div>
-      </header>
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <div class="mob-menu-top">
+              <button class="close-menu-btn">
+                <svg class="close-menu-btn_icon" width="19" height="19">
+                  <use href="./images/svg/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link link">Студия</a></li>
+                <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a></li>
+                <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <div class="mob-menu-connect">
+                <ul class="mob-menu-connect-list list">
+                  <li class="mob-menu-connect-list__item"><a href="tel:+380991111111"
+                      class="mob-menu-connect-list__tel-link link">+38 096 111 11 11</a></li>
+                  <li class="mob-menu-connect-list__item"><a href="mailto:info@example.com"
+                      class="mob-menu-connect-list__mail-link link">info@devstudio.com</a></li>
+                </ul>
+              </div>
+              <!-- Соцсети мобильного меню -->
+              <ul class="mob-social-list list">
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link link">Instagram</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link link">Twitter</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link link">Facebook</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>     
     </header>
 
     <!-- main -->
     <main>
         <h1 class="portfolio-title">portfolio</h1>
         <!-- button -->
+        <div class="container">
         <section class="portfolio-btn">
-            <div class="container">
             <ul class="btn-list">
                 <li class="btn-list__item list">
                     <button class="btn-list__text" type="button">Все</button>
@@ -72,11 +125,16 @@
             </ul>
         </div>
         <!-- section project -->
-        <div class="container project-container">
+        <div class="container">
 <ul class="project-list">
     <li class="project-list__item list">
       <div class="project-list__item-wrap">
-    <img src="./images/tecnokriak.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+        <picture>
+          <source srcset="./images/project/tecnokriak-desk-1x.jpg 1x, ./images/project/tecnokriak-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+          <source srcset="./images/project/tecnokriak-tab-1x.jpg 1x, ./images/project/tecnokriak-tab-2x.jpg 2x" media="(min-width: 768px)" />
+          <source srcset="./images/project/tecnokriak-mob-1x.jpg 1x, ./images/project/tecnokriak-mob-2x.jpg 2x" media="(min-width: 320px)" />
+          <img src="./images/project/tecnokriak-mob-1x.jpg" loading="lazy" alt="Технокряк современная площадка" title="Технокряк" />
+        </picture>
     <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Технокряк</h2>
@@ -84,7 +142,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/new_orlean.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/nev-orlean-desk-1x.jpg 1x, ./images/project/nev-orlean-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/nev-orlean-tab-1x.jpg 1x, ./images/project/nev-orlean-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/nev-orlean-mob-1x.jpg 1x, ./images/project/nev-orlean-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/nev-orlean-1x.jpg" loading="lazy" alt="Постер New Orlean" title="Постер New Orlean" />
+    </picture>
     <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Постер New Orlean vs Golden Star</h2>
@@ -92,7 +155,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/seafood-desk-1x.jpg 1x, ./images/project/seafood-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/seafood-tab-1x.jpg 1x, ./images/project/seafood-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/seafood-mob-1x.jpg 1x, ./images/project/seafood-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/seafood-mob-1x.jpg" loading="lazy" alt="Ресторан Seafood" title="Ресторан Seafood" />
+    </picture>
     <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Ресторан Seafood</h2>
@@ -100,7 +168,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/prime.jpg" alt="Проект Prime" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/prime-desk-1x.jpg 1x, ./images/project/prime-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/prime-tab-1x.jpg 1x, ./images/project/prime-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/prime-mob-1x.jpg 1x, ./images/project/prime-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/prime-mob-1x.jpg" loading="lazy" alt="Проект Prime" title="Проект Prime" />
+    </picture>
     <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Проект Prime</h2>
@@ -108,15 +181,25 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" height="294">
-    <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+    <picture>
+      <source srcset="./images/project/boxes-desk-1x.jpg 1x, ./images/project/boxes-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/boxes-tab-1x.jpg 1x, ./images/project/boxes-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/boxes-mob-1x.jpg 1x, ./images/project/boxes-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/boxes-mob-1x.jpg" loading="lazy" alt="Проект Boxes" title="Проект Boxes" />
+    </picture>
+        <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Проект Boxes</h2>
     <p class="project-list__text">Приложение</p>
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/borders.jpg" alt="Inspiration has no Borders" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/borders-desk-1x.jpg 1x, ./images/project/borders-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/borders-tab-1x.jpg 1x, ./images/project/borders-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/borders-mob-1x.jpg 1x, ./images/project/borders-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/borders-mob-1x.jpg" loading="lazy" alt="Inspiration has no Borders" title="Inspiration has no Borders" />
+    </picture>
   <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Inspiration has no Borders</h2>
@@ -124,7 +207,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/edition.jpg" alt="Издание Limited Edition" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/edition-desk-1x.jpg 1x, ./images/project/edition-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/edition-tab-1x.jpg 1x, ./images/project/edition-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/edition-mob-1x.jpg 1x, ./images/project/edition-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/edition-mob-1x.jpg" loading="lazy" alt="Издание Limited Edition" title="Издание Limited Edition" />
+    </picture>
   <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Издание Limited Edition</h2>
@@ -132,7 +220,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/lab.jpg" alt="Проект LAB" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/lab-desk-1x.jpg 1x, ./images/project/lab-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/lab-tab-1x.jpg 1x, ./images/project/lab-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/lab-mob-1x.jpg 1x, ./images/project/lab-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/lab-mob-1x.jpg" loading="lazy" alt="Проект LAB" title="Проект LAB" />
+    </picture>
   <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Проект LAB</h2>
@@ -140,7 +233,12 @@
 </li>
 <li class="project-list__item list">
   <div class="project-list__item-wrap">
-    <img src="./images/business.jpg" alt="Growing Business" width="370" height="294">
+    <picture>
+      <source srcset="./images/project/business-desk-1x.jpg 1x, ./images/project/business-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+      <source srcset="./images/project/business-tab-1x.jpg 1x, ./images/project/business-tab-2x.jpg 2x" media="(min-width: 768px)" />
+      <source srcset="./images/project/business-mob-1x.jpg 1x, ./images/project/business-mob-2x.jpg 2x" media="(min-width: 320px)" />
+      <img src="./images/project/business-mob-1x.jpg" loading="lazy" alt="Growing Business" title="Growing Business" />
+    </picture>
   <p class="project-list__text-top">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
   </div>
     <h2 class="project-list__title">Growing Business</h2>
@@ -198,17 +296,18 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="subscribe">
       <p class="social__title">Подпишитесь на рассылку</p> 
-      <form class="footer-form">
-        <input type="mail" name="email" id="email" class="footer-form__input" placeholder="E-mail">              
-      <button class="footer-form__button" type="button">Подписаться
+      <form class="subscribe-form">
+        <input type="mail" name="email" id="email" class="subscribe-form__input" placeholder="E-mail">              
+      <button class="subscribe-form__button" type="button">Подписаться
         <div>
-        <svg class="footer-form__icon-send" width="24" heigth="24">
+        <svg class="subscribe-form__icon-send" width="24" heigth="24">
           <use href="./images/svg/icons.svg#icon-send"></use>
         </svg>
         </div>
       </button>
       </form>             
     </div>
+    <script src="./js/mobile-menu.js"></script>
     </body>

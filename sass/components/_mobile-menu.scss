@@ -9,6 +9,10 @@
    @media screen and (min-width: 767px) {
     display: none;
     }
+    &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   }
   .open-menu-burger, .close-menu-btn_icon {
     width: 24px;
@@ -40,11 +44,14 @@
 .close-menu-btn{
   display: block;
   margin-left: auto;
-  background-color: #FFFFFF;
+  background: transparent;  
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   }
 .close-menu-btn_icon{
   height: 100%;
-  
 }
 
 .mob-menu-list__item{
@@ -76,6 +83,11 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.02em;
 color: #212121;
+&:focus,
+  &:hover {
+    color: #2196F3;
+    outline: none;
+  }
 }
 .mob-menu-connect-list__tel-link{
   font-family: Roboto;
@@ -83,7 +95,12 @@ font-weight: 500;
 font-size: 34px;
 line-height: 1.18;
 letter-spacing: 0.02em;
-color: #2196F3;
+color: #757575;
+&:focus,
+  &:hover {
+    color: #2196F3;
+    outline: none;
+  }
 }
 .mob-menu-connect-list__mail-link{
   font-family: Roboto;
@@ -93,6 +110,11 @@ font-size: 24px;
 line-height: 1.16;
 letter-spacing: 0.02em;
 color: #757575;
+&:focus,
+  &:hover {
+    color: #2196F3;
+    outline: none;
+  }
 }
 .mob-social-link{
   font-family: Roboto;

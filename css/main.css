@@ -1545,6 +1545,10 @@ body {
   }
 }
 
+.open-menu-btn:hover, .open-menu-btn:focus {
+  fill: var(--accent-color);
+}
+
 .open-menu-burger, .close-menu-btn_icon {
   width: 24px;
   height: 16px;
@@ -1576,7 +1580,11 @@ body {
 .close-menu-btn {
   display: block;
   margin-left: auto;
-  background-color: #FFFFFF;
+  background: transparent;
+}
+
+.close-menu-btn:hover, .close-menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 .close-menu-btn_icon {
@@ -1613,13 +1621,23 @@ body {
   color: #212121;
 }
 
+.mob-menu-list__link:focus, .mob-menu-list__link:hover {
+  color: #2196F3;
+  outline: none;
+}
+
 .mob-menu-connect-list__tel-link {
   font-family: Roboto;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-menu-connect-list__tel-link:focus, .mob-menu-connect-list__tel-link:hover {
   color: #2196F3;
+  outline: none;
 }
 
 .mob-menu-connect-list__mail-link {
@@ -1630,6 +1648,11 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mob-menu-connect-list__mail-link:focus, .mob-menu-connect-list__mail-link:hover {
+  color: #2196F3;
+  outline: none;
 }
 
 .mob-social-link {

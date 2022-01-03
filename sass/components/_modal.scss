@@ -24,7 +24,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: calc(100% - 30px);
     height: auto;
     transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 250ms;
